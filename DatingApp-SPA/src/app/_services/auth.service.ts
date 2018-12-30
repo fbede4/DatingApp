@@ -22,4 +22,7 @@ constructor(private http: HttpClient) { }
       );
   }
 
+  register(model: any) {
+    return this.http.post(this.baseurl + 'register', model);
+  }
 }
